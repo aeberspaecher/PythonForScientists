@@ -14,6 +14,12 @@ programming  as well as a short demonstration of advanced topics
 such as scientific packages (NumPy, SciPy). Python as a glue
 language was targeted, too.
 
+Slides
+======
+
+If you are only interested in the pdf slides:
+https://github.com/aeberspaecher/PythonForScientists/blob/master/talk.pdf
+
 Notes
 =====
 
@@ -23,3 +29,6 @@ appear on the slides, too.
 The folder ``Code`` contains the code I have used for the
 benchmarks. The Cython ad f2py files contain some hints on the
 creation of shared objects.
+
+In comparison to presentation I gave in Riezlern, there are two new
+slides. Minor bugs have been fixed. Let me know if you find more.
