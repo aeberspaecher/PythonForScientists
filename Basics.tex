@@ -1,0 +1,83 @@
+\section{Basics}
+
+\subsection{Hello, World!}
+
+\begin{frame}[fragile]{Scientific \emph{Hello, World!}}
+
+\begin{columns}
+    
+\column{0.65\textwidth}
+
+\include{Pygsnippets/HelloWorld}
+
+\column{0.4\textwidth}
+
+cmp. H.-P. Langtangen, "Python Scripting for Computational Science"\\[1ex]
+
+run with:
+\begin{verbatim}
+python HelloWorld.py 0.0
+\end{verbatim}
+
+
+\end{columns}
+
+
+\end{frame}
+
+\subsection{Basic Python}
+
+\begin{frame}[fragile]{Control structures}
+
+\include{Pygsnippets/controlStructures}
+
+\end{frame}
+
+\begin{frame}[fragile]{Functions}
+
+\include{Pygsnippets/Functions}
+
+\end{frame}
+
+\begin{frame}[fragile]{Data types}
+
+\include{Pygsnippets/DataTypes}
+
+\end{frame}
+
+\begin{frame}[fragile]{Files}
+
+\include{Pygsnippets/Files}
+
+\begin{columns}
+\column{0.5\textwidth}
+{\texttt infile}:
+\begin{verbatim}
+1.0    2.0
+3.0    4.0
+\end{verbatim}
+
+\column{0.5\textwidth}
+
+{\texttt outfile}:
+\begin{verbatim}
+1.0 * 2.0 = 2.0
+3.0 * 4.0 = 12.0
+\end{verbatim}  
+
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Pitfalls}
+
+$\lightning$ Common pitfalls:
+
+\begin{itemize}
+    \item slicing: last index is \emph{exclusive}, not \emph{inclusive} as in e.g. Fortran
+    \include{Pygsnippets/Pitfalls1}
+    \item What looks like an assignment is actually setting a reference:
+    \include{Pygsnippets/Pitfalls2}
+\end{itemize}
+
+\end{frame}

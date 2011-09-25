@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k+kn}{as} \PY{n+nn}{np}
+
+\PY{n}{a} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{l+m+mf}{1.0}\PY{p}{,} \PY{l+m+mf}{2.0}\PY{p}{,} \PY{l+m+mf}{3.0}\PY{p}{,} \PY{l+m+mf}{4.0}\PY{p}{]}\PY{p}{)}
+\PY{n}{b} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{l+m+mf}{4.0}\PY{p}{,} \PY{l+m+mf}{3.0}\PY{p}{,} \PY{l+m+mf}{2.0}\PY{p}{,} \PY{l+m+mf}{1.0}\PY{p}{]}\PY{p}{)}
+\PY{k}{for} \PY{n}{item} \PY{o+ow}{in} \PY{n}{a}\PY{p}{:} \PY{c}{\PYZsh{} arrays are iterable}
+    \PY{k}{print}\PY{p}{(}\PY{n}{item}\PY{p}{)}
+\PY{n}{c} \PY{o}{=} \PY{n}{a} \PY{o}{+} \PY{n}{b} \PY{c}{\PYZsh{} c = [5, 5, 5, 5]}
+\PY{k}{print}\PY{p}{(}\PY{n}{a}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{:}\PY{l+m+mi}{3}\PY{p}{:}\PY{l+m+mi}{2}\PY{p}{]}\PY{p}{)} \PY{c}{\PYZsh{} 1.0, 3.0; last element not included!}
+\PY{n}{a}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{:}\PY{l+m+mi}{3}\PY{p}{]} \PY{o}{=} \PY{n}{b}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{:}\PY{o}{-}\PY{l+m+mi}{1}\PY{p}{]}
+
+\PY{k}{print}\PY{p}{(}\PY{n}{a}\PY{o}{*}\PY{n}{b}\PY{p}{)} \PY{c}{\PYZsh{} prints [4, 6, 6, 4], not the scalar product!}
+\end{Verbatim}

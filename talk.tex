@@ -1,0 +1,63 @@
+\documentclass[compress]{beamer}
+%\documentclass[compress, handout]{beamer}
+
+% To create a handout: uncomment below and add handout as an option
+% for documentclass
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{2 on 1}[a4paper,border shrink=5mm]
+
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{units}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[amssymb]{SIunits}
+\usepackage{amssymb}
+\usepackage{microtype}
+\usepackage{bbm}
+\usepackage{booktabs}
+\usepackage{fancyvrb}
+\usepackage{color}
+\usepackage{pygments}
+\usepackage{stackrel}
+\usepackage{MnSymbol}
+
+\usepackage[TOC]{style} % add option 'TOC' if you want an Outline before every section
+\usepackage{simpleMath}
+
+\usepackage{graphicx}
+%\graphicspath{{Figures/}}
+
+
+\title[] % (optional, use only with long paper titles)
+{Python Programming for Scientists}
+\titlegraphic{\includegraphics[width=0.9\textwidth]{Figures/NAT_SIGN_druck_SW}\\\includegraphics[width=0.9\textwidth]{Figures/FOR760_full}}
+%\subtitle{A good subtitle} % (optional)
+\author[] % (optional, use only with lots of authors)
+{Alexander Eberspächer}
+
+\date[]{September 21\textsuperscript{st} 2011} % \today ?
+
+\subject{Python Programming for Scientists}
+
+
+\begin{document}
+
+\begin{frame} % title
+  \titlepage
+  \thispagestyle{empty}
+\end{frame}
+
+\begin{frame}{Outline} % first Outline
+  \tableofcontents
+\end{frame}
+
+% Input your presentation's contents here
+\input{Intro}
+\input{Basics}
+\input{Advanced}
+\input{Glue}
+\input{Summary}
+
+\end{document}

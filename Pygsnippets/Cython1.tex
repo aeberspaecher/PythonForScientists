@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{k}{cdef} \PY{k+kr}{extern} \PY{k}{from} \PY{l+s}{"}\PY{l+s}{math.h}\PY{l+s}{"}\PY{p}{:}
+    \PY{n}{double} \PY{n}{sin}\PY{p}{(}\PY{n}{double}\PY{p}{)}
+    \PY{n}{double} \PY{n+nb}{pow}\PY{p}{(}\PY{n}{double}\PY{p}{,} \PY{n+nb}{int}\PY{p}{)}
+
+\PY{k}{def} \PY{n+nf}{sincSquareCython1}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{p}{:}
+
+    \PY{n}{pi} \PY{o}{=} \PY{l+m+mf}{3.1415926535897932384626433}
+    \PY{n}{retVal} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{zeros\PYZus{}like}\PY{p}{(}\PY{n}{x}\PY{p}{)}
+
+    \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{p}{)}\PY{p}{:}
+        \PY{n}{retVal}\PY{p}{[}\PY{n}{i}\PY{p}{]} \PY{o}{=} \PY{p}{(}\PY{n}{sin}\PY{p}{(}\PY{n}{pi}\PY{o}{*}\PY{n}{x}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)} \PY{o}{/} \PY{p}{(}\PY{n}{pi}\PY{o}{*}\PY{n}{x}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)}\PY{p}{)}\PY{o}{*}\PY{o}{*}\PY{l+m+mf}{2}
+
+    \PY{k}{return} \PY{n}{retVal}
+\end{Verbatim}

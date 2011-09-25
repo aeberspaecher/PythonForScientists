@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{k}{cimport} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np} \PY{c}{\PYZsh{} also C-import types}
+
+\PY{k}{cpdef} \PY{k+kt}{np}.\PY{k+kt}{ndarray}[\PY{k+kt}{double}] \PY{k+kt}{sincSquareCython2}\PYZbs{}
+    \PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{ndarray}\PY{p}{[}\PY{n}{double}\PY{p}{]} \PY{n}{x}\PY{p}{)}\PY{p}{:}
+
+    \PY{k}{cdef} \PY{k+kt}{int} \PY{n+nf}{i}
+    \PY{k}{cdef} \PY{k+kt}{double} \PY{n+nf}{pi} \PY{o}{=} \PY{l+m+mf}{3.1415926535897932384626433}
+    \PY{k}{cdef} \PY{k+kt}{np}.\PY{k+kt}{ndarray}[\PY{k+kt}{double}] \PY{n+nf}{retVal} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{zeros\PYZus{}like}\PY{p}{(}\PY{n}{x}\PY{p}{)}
+
+    \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{p}{)}\PY{p}{:}
+        \PY{n}{retVal}\PY{p}{[}\PY{n}{i}\PY{p}{]} \PY{o}{=} \PY{n+nb}{pow}\PY{p}{(}\PY{n}{sin}\PY{p}{(}\PY{n}{pi}\PY{o}{*}\PY{n}{x}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)} \PY{o}{/} \PY{p}{(}\PY{n}{pi}\PY{o}{*}\PY{n}{x}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)}\PY{p}{,} \PY{l+m+mf}{2}\PY{p}{)}
+\end{Verbatim}

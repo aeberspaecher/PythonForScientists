@@ -1,0 +1,114 @@
+\section{Python Modules for Science}
+
+\subsection{Important tools}
+
+\begin{frame}{The IPython shell}
+
+\begin{exbox}{IPython}
+An interactive shell - may replace MatLab [tm] for interactive work
+\end{exbox}
+
+\begin{columns}
+
+\column{0.25\textwidth}
+\begin{itemize}
+	\item Syntax highlighting
+	\item Tab completion
+	\item Inline documentation
+	\item Easy profiling, timing...
+	\item IPython $\ge$ 0.11: inline plots...
+\end{itemize}
+
+\column{0.75\textwidth}
+
+\includegraphics[width=\textwidth]{Figures/Ipython1.png}
+
+\end{columns}
+
+\end{frame}
+
+\subsection{NumPy}
+
+\begin{frame}{NumPy: Python meets an array data type}
+
+\begin{exbox}{NumPy}
+Fast and convenient array operations
+\end{exbox}
+
+\begin{itemize}
+	\item Lists: + does join, not add!
+	\item NumPy array: basic vector/matrix data type
+	\item Convenience functions (e.g. {\texttt{linspace(), zeros(), loadtxt()...}})
+	\item Array slicing
+	\item element-wise operations
+	\item Code using NumPy reads and writes very similar to modern Fortran
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{NumPy by examples}
+
+\include{Pygsnippets/NumPy}
+
+\end{frame}
+
+\begin{frame}{SciPy}
+
+\begin{exbox}{SciPy}
+Numerical algorithms using NumPy arrays
+\end{exbox}
+
+Wrappers around well-established libraries\\[1.0ex]
+
+Submodules:
+
+\begin{columns}
+
+\column{0.5\textwidth}
+
+\begin{itemize}
+	\item {\texttt{linalg}}: Linear algebra (lapack)
+	\item{\texttt{sparse}}: sparse matrices
+	\item {\texttt{fft}}: FFT (fftpack)
+	\item {\texttt{optimize}}: Optimization, Zeros (minpack)
+\end{itemize}
+
+
+\column{0.5\textwidth}
+
+\begin{itemize}
+	\item {\texttt{integration}}: Integration (quadpack, odepack)
+	\item {\texttt{special}}: special functions (amos...)
+	\item {\texttt{signal}}: Signal processing
+\end{itemize}
+
+\end{columns}
+
+\end{frame}
+
+\begin{frame}[fragile]{SciPy: an example}
+
+\include{Pygsnippets/SciPy}
+
+\end{frame}
+
+\begin{frame}{SciPy: the example's output}
+
+\begin{center}
+	\includegraphics[width=0.8\textwidth]{Figures/fit-png}
+\end{center}
+
+Already used here: \emph{Matplotlib}
+
+\end{frame}
+
+\begin{frame}{Matplotlib}
+
+(mostly) 2D plots
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{Figures/mpl}
+\end{center}
+
+Pylab: MatLab alternative for interactive work
+\end{frame}

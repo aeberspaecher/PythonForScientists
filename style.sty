@@ -1,0 +1,54 @@
+\NeedsTeXFormat{LaTeX2e}
+
+\ProvidesPackage{style}
+
+\usefonttheme{structurebold}
+
+\mode<presentation>
+{
+
+% black and white-ish theme
+\setbeamertemplate{navigation symbols}{}
+\useoutertheme[subsection=false]{miniframes}
+\setbeamercolor{separation line}{use=structure,bg=structure.fg!50!bg}
+\useinnertheme[]{rectangles}
+\usecolortheme{dove}     % outer color theme?
+\usecolortheme{rose}     % inner color theme?
+
+\setbeamercovered{transparent}
+    
+\usefonttheme{professionalfonts}
+}
+
+\definecolor{darkred}{rgb}{0.8,0.3,0.3}
+\definecolor{lighty}{rgb}{0.40,0.47,0.52}
+\setbeamercolor{alerted text}{fg=darkred}
+\setbeamercolor{example text}{fg=lighty}
+
+\setbeamertemplate{blocks}[rounded][shadow=true]
+
+% greyish box
+\newenvironment{exbox}[1]
+{\vspace{0.5ex}\begin{exampleblock}{#1}}
+{\end{exampleblock}\vspace{0.75ex}}
+
+% blueish box
+\newenvironment{bbox}[1]
+{\vspace{0.5ex}\begin{block}{#1}}
+{\end{block}\vspace{0.75ex}}
+
+% redish box
+\newenvironment{alertbbox}[1]
+{\vspace{0.5ex}\begin{alertblock}{#1}}
+{\end{alertblock}\vspace{0.75ex}}
+
+\setcounter{tocdepth}{1}
+
+\DeclareOption{TOC}{
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection]
+  \end{frame}
+}}
+\ProcessOptions\relax

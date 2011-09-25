@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{k+kn}{import} \PY{n+nn}{sys}
+\PY{k+kn}{from} \PY{n+nn}{math} \PY{k+kn}{import} \PY{n}{sin}\PY{p}{,} \PY{n}{pi}
+
+\PY{k}{def} \PY{n+nf}{sincSquare}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{p}{:}
+    \PY{l+s+sd}{"""Return sinc(x)\PYZca{}2.}
+\PY{l+s+sd}{    """}
+    \PY{k}{if}\PY{p}{(}\PY{n}{x} \PY{o}{<}\PY{o}{>} \PY{l+m+mf}{0.0}\PY{p}{)}\PY{p}{:}
+        \PY{k}{return} \PY{p}{(}\PY{n}{sin}\PY{p}{(}\PY{n}{pi}\PY{o}{*}\PY{n}{x}\PY{p}{)}\PY{o}{/}\PY{p}{(}\PY{n}{pi}\PY{o}{*}\PY{n}{x}\PY{p}{)}\PY{p}{)}\PY{o}{*}\PY{o}{*}\PY{l+m+mi}{2}
+    \PY{k}{else}\PY{p}{:}
+        \PY{k}{return} \PY{l+m+mf}{1.0}
+
+\PY{n}{x} \PY{o}{=} \PY{n}{sys}\PY{o}{.}\PY{n}{argv}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}
+\PY{n}{y} \PY{o}{=} \PY{n}{sincSquare}\PY{p}{(}\PY{n+nb}{float}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{p}{)}
+\PY{k}{print}\PY{p}{(}\PY{l+s}{"}\PY{l+s}{sinc(}\PY{l+s+si}{\PYZpc{}s}\PY{l+s}{)\PYZca{}2 = }\PY{l+s+si}{\PYZpc{}s}\PY{l+s}{"}\PY{o}{\PYZpc{}}\PY{p}{(}\PY{n}{x}\PY{p}{,} \PY{n}{y}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}

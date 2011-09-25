@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{k}{subroutine }\PY{n+nv}{sincsquaref2py1}\PY{p}{(}\PY{n+nv}{x}\PY{p}{,} \PY{n+nv}{n}\PY{p}{,} \PY{n+nv}{outVal}\PY{p}{)}
+    \PY{k}{implicit }\PY{k}{none}
+
+\PY{k}{    }\PY{k+kt}{double precision}\PY{p}{,} \PY{k}{dimension}\PY{p}{(}\PY{n+nv}{n}\PY{p}{)}\PY{p}{,} \PY{k}{intent}\PY{p}{(}\PY{n+nv}{in}\PY{p}{)} \PY{k+kd}{::} \PY{n+nv}{x}
+    \PY{k+kt}{integer}\PY{p}{,} \PY{k}{intent}\PY{p}{(}\PY{n+nv}{in}\PY{p}{)} \PY{k+kd}{::} \PY{n+nv}{n}
+    \PY{k+kt}{double precision}\PY{p}{,} \PY{k}{dimension}\PY{p}{(}\PY{n+nv}{n}\PY{p}{)}\PY{p}{,} \PY{k}{intent}\PY{p}{(}\PY{n+nv}{out}\PY{p}{)} \PY{k+kd}{::} \PY{n+nv}{outVal}
+    \PY{k+kt}{double precision}\PY{p}{,} \PY{k}{parameter} \PY{k+kd}{::} \PY{n+nv}{pi} \PY{o}{=} \PY{l+m+mf}{4.0}\PY{n+nv}{d0} \PY{o}{*} \PY{n+nb}{atan}\PY{p}{(}\PY{l+m+mf}{1.0}\PY{n+nv}{d0}\PY{p}{)}
+
+    \PY{n+nv}{outVal}\PY{p}{(}\PY{p}{:}\PY{p}{)} \PY{o}{=} \PY{p}{(}\PY{n+nb}{sin}\PY{p}{(}\PY{n+nv}{pi}\PY{o}{*}\PY{n+nv}{x}\PY{p}{(}\PY{p}{:}\PY{p}{)}\PY{p}{)} \PY{o}{/} \PY{p}{(}\PY{n+nv}{pi}\PY{o}{*}\PY{n+nv}{x}\PY{p}{(}\PY{p}{:}\PY{p}{)}\PY{p}{)}\PY{p}{)}\PY{o}{**}\PY{l+m+mi}{2}
+
+\PY{k}{end }\PY{k}{subroutine }\PY{n+nv}{sincsquaref2py1}
+\end{Verbatim}

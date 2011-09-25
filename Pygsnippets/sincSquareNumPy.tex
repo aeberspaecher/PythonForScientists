@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k+kn}{as} \PY{n+nn}{np}
+
+\PY{k}{def} \PY{n+nf}{sincSquareNumPy1}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{p}{:}
+
+    \PY{k}{return} \PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{sin}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{pi}\PY{o}{*}\PY{n}{x}\PY{p}{[}\PY{p}{:}\PY{p}{]}\PY{p}{)}\PY{o}{/}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{pi}\PY{o}{*}\PY{n}{x}\PY{p}{[}\PY{p}{:}\PY{p}{]}\PY{p}{)}\PY{p}{)}\PY{o}{*}\PY{o}{*}\PY{l+m+mi}{2}
+
+\PY{k}{def} \PY{n+nf}{sincSquareNumPy2}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{p}{:}
+
+    \PY{k}{return} \PY{n}{np}\PY{o}{.}\PY{n}{sinc}\PY{p}{(}\PY{n}{x}\PY{p}{[}\PY{p}{:}\PY{p}{]}\PY{p}{)}\PY{o}{*}\PY{o}{*}\PY{l+m+mi}{2}
+\end{Verbatim}

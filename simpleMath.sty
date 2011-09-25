@@ -1,0 +1,107 @@
+\ProvidesPackage{simpleMath}
+
+\RequirePackage{amsmath, amsfonts, amssymb}
+\RequirePackage{bm}
+\RequirePackage{bbm}
+
+%
+% My own operators and environments
+% Eigene Operatoren, Umgebungen
+%
+
+% New font: Euler; Neuer Font: Euler.
+\DeclareMathAlphabet\matheuler{U}{eur}{m}{n} % Neues Mathealphabet Euler festlegen
+ 
+% Allgemeines zum Formelsatz
+% General math typesetting
+
+% e und i in Euler font
+% e and i in Euler font
+% Kommentar entfernen, wenn gewünscht; remove comment if wanted
+\newcommand{\ee}{\ensuremath{\matheuler{e}}} % Euler Roman "e" als Euler-Zahl; Euler Roman "e" as the Euler number
+\newcommand{\ii}{\ensuremath{\matheuler{i}}} % Euler Roman "i" als imaginäre Einheit.; Euler Roman imaginary unit "i"
+% e und i in normalem Roman
+%\newcommand{\ee}{\ensuremath{\mathrm{e}}} %  Roman "e" als Euler-Zahl; Roman "e" as Euler number
+%\newcommand{\ii}{\ensuremath{\mathrm{i}}} %  Roman "i" als imaginäre Einheit; Roman "i" as imaginary unit
+
+% Norm ||1|| und Betrag |1|; Norm ||1|| and modulus |1|
+\newcommand{\abs}[1]{\ensuremath{\left\vert #1 \right\vert}} % Betrag |1|; Modulus |1|
+\newcommand{\norm}[1]{\ensuremath{\left\vert\left\vert #1 \right\vert\right\vert}} % Norm ||1||
+
+% Mengen; Sets
+\newcommand{\set}[1]{\ensuremath{\left\lbrace #1 \right\rbrace}}
+\newcommand{\NaturalsZero}{\ensuremath{\mathbb{N}_0}}
+\newcommand{\Naturals}{\ensuremath{\mathbb{N}}}
+\newcommand{\Reals}{\ensuremath{\mathbb{R}}}
+\newcommand{\Complex}{\ensuremath{\mathbb{C}}}
+
+% Differentiale, Exponentialschreibweise und Diverses
+% Differentials, exponentials and misc
+\newcommand{\eto}[1]{\ensuremath{\,{\ee}^{#1}}} % aufrechtes e^{1}; upright e^{1}
+\renewcommand{\vec}[1]{{\ensuremath{\boldsymbol{#1}}}} % Vektoren fett und kursiv; bold italic vectors
+\newcommand{\dd}{\ensuremath{\mathrm{d}}} % aufrechtes Differential d; upright differential d
+\newcommand{\E}[1]{\ensuremath{\cdot 10^{#1}}} % Zehnerpotenzen, z.B. 1\E{-1} = 1*10^{-1}; Powers of ten, e.g. 1\E{-1} = 1*10^{-1}
+\newcommand{\identity}{\ensuremath{\vec{1}}} % Identität als 1 mit Doppelstrich; identity 1 with double vertical lines
+\newcommand{\avg}[1]{\ensuremath{\left\langle #1 \right\rangle}} % Mittelwert mit <1>; avergage <1>
+\newcommand{\entspricht}{\stackrel{\scriptscriptstyle\wedge}{=}} % entspricht
+\newcommand{\equals}{\stackrel{\scriptscriptstyle\wedge}{=}} % equals
+\newcommand{\const}{\ensuremath{\mathrm{const}}}
+
+% Ableitungen: erste und zweite nach beliebigen Variablen; total und partiell
+% Derivatives: first and second; total and partial
+\newcommand{\firstderiv}[2]{\ensuremath{\frac{\mathrm{d}#1}{\mathrm{d}#2}}} % erste Ableitung; first derivative
+\newcommand{\secondderiv}[2]{\ensuremath{\frac{\mathrm{d}^2#1}{\mathrm{d}{#2}^2}}}	% zweite Ableitung; second derivative
+\newcommand{\firstpderiv}[2]{\ensuremath{\frac{\partial #1}{\partial #2}}} % erste partielle Ableitung; first partial derivative
+\newcommand{\secondpderiv}[2]{\ensuremath{\frac{\partial^2 #1}{\partial {#2}^2}}}	% zweite partielle Ableitung; second partial deriviative
+
+% Vektoren in 3D; vectors in 3D
+\newcommand{\DreierVec}[3]{\ensuremath{\left[ \begin{array}{c} #1 \\ #2 \\ #3 \end{array} \right]}} % Vektor in R^3 mit eckigen Klammern; R^3 with square brackets
+\newcommand{\ZweierVec}[2]{\ensuremath{\left[ \begin{array}{c} #1 \\ #2 \end{array} \right]}} % Vektor in R^2 mit eckigen Klammern; R^3 with square brackets
+\let\oldnabla=\nabla % Nabla fett machen Vorbereitung - ACHTUNG, UNSCHÖN!; prepare bold Nabla
+\renewcommand{\nabla}{\ensuremath{\mbox{\boldmath$\oldnabla$}}} % Nabla fett machen; bold nabla
+\newcommand{\dn}{\ensuremath{\partial_{\vec{n}}}} % Normalableitung d_n; normal derivative d_n
+
+% Quantentheorie, Diracs bras and kets
+% Quantum theory, Dirac bra and ket vectors
+\newcommand{\ket}[1]{\ensuremath{\left\vert #1\right\rangle}} % ket-Vektor; ket vector
+\newcommand{\bra}[1]{\ensuremath{\left\langle #1\right\vert}} % bra-Vektor; bra vector
+\newcommand{\braket}[2]{\ensuremath{\left\langle #1 \middle\vert #2 \right\rangle}} % bra-ket <1|2>
+\newcommand{\qmnorm}[1]{\ensuremath{\left\langle #1\middle\vert #1 \right\rangle}} % Norm eines Zustandes <1|1>; norm of state <1|1>
+\newcommand{\expval}[2]{\ensuremath{\left\langle #2\left\vert #1\right\vert #2\right\rangle}} % Erwartungswert <2|1|2>; expectation value <2|1|2>
+\newcommand{\altexpval}[2]{\ensuremath{\left\langle #1\right\rangle}_{#2}} % Erwartungswert <1>_{2}; expectation value <1>_{2}
+\newcommand{\matrixel}[3]{\ensuremath{\left\langle #1 \middle\vert #2 \middle\vert #3 \right\rangle}} % Matrix-Element <1|2|3>; matrix element <1|2|3>
+\newcommand{\commutator}[2]{\ensuremath{\left[ #1, #2 \right]}} % Kommutator [1,2], commutator [1,2]
+\newcommand{\anticomm}[2]{\ensuremath{\left\{ #1, #2 \right\}}} % Antikommuator {1,2}; anti-commutator {1, 2}
+
+% Elektrodynamik; electrodynmics
+\newcommand{\intddreix}{\ensuremath{\int \! \mathrm{d}^3 r}}
+\newcommand{\intdthreex}{\ensuremath{\int \! \mathrm{d}^3 r}}
+
+% Neue Operatoren
+% New operators
+\DeclareMathOperator{\Real}{Re} % Re: Realteil einer komplexen Zahl; real part of a c-number
+\DeclareMathOperator{\Imag}{Im} % Im: Imaginärteil einer komplexen Zahl; imaginary part of a c-number
+\DeclareMathOperator{\sign}{sign} % sign: Vorzeichen einer Zahl; sign of a number
+\DeclareMathOperator{\rot}{rot} % rot: Rotation; German "rot" = curl
+\DeclareMathOperator{\curl}{curl} % curl: Rotation auf Englisch; curl
+\DeclareMathOperator{\grad}{grad} % grad: Gradient; gradient
+\let\div\olddiv % \div sichern; backup \div
+\DeclareMathOperator{\div}{div}
+\DeclareMathOperator{\diag}{diag} % diag: Diagonalmatrix; diagonal matrix
+\DeclareMathOperator{\FT}{\mathcal{F}} % curly F: Fouriertrafo.; Fourier transformation
+\DeclareMathOperator{\invFT}{\mathcal{F}^{-1}} % curly F^{-1}: inverse FT; inverse FT
+
+\DeclareMathOperator{\Tr}{tr} % Tr: Spur; trace
+\DeclareMathOperator{\var}{var} % Varianz var; variance var
+
+% special constants
+\newcommand{\dH}{\ensuremath{{d_\mathrm{H}}}} % Hausdorff dimension d_H
+\newcommand{\Ws}{\ensuremath{\mathcal{W_\mathrm{s}}}} % stable maifold Ws
+\newcommand{\Wu}{\ensuremath{\mathcal{W_\mathrm{u}}}} % unstable maifold Wu
+\newcommand{\M}{\ensuremath{\mathcal{M}}} % curlyM
+
+% special terms
+\newcommand{\po}{\ensuremath{\mathrm{po}}} % po in roman
+\newcommand{\inside}{\ensuremath{\mathrm{in}}} % in in roman
+\newcommand{\outside}{\ensuremath{\mathrm{out}}} % out in roman
+\newcommand{\res}{\ensuremath{\mathrm{res}}} % res in roman
