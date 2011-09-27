@@ -3,7 +3,7 @@ def f(x, a=1.0, b=2.0):
     """Return a/x and a/x^b.
     """
 
-    return a/x**b
+    return a/x, a/x**b
 
 # somewhere else:
 a = 5
