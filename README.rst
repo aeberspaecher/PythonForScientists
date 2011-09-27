@@ -20,6 +20,11 @@ Slides
 If you are only interested in the pdf slides:
 https://github.com/aeberspaecher/PythonForScientists/blob/master/talk.pdf
 
+Dependencies
+============
+
+You'll need Pygments for the syntax highlighted LaTeX snippets to work.
+
 Notes
 =====
 
