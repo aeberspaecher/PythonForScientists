@@ -14,7 +14,8 @@ OBJECTS = controlStructures.tex\
 	sincSquareNumPy.tex\
 	mpi4py.tex\
 	Pitfalls1.tex\
-	Pitfalls2.tex
+	Pitfalls2.tex\
+	logMap.tex
 
 # pattern rules:
 %.tex: %.py
