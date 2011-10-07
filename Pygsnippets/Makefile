@@ -15,7 +15,8 @@ OBJECTS = controlStructures.tex\
 	mpi4py.tex\
 	Pitfalls1.tex\
 	Pitfalls2.tex\
-	logMap.tex
+	logMap.tex\
+	magic.tex
 
 # pattern rules:
 %.tex: %.py
