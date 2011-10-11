@@ -69,6 +69,22 @@ python HelloWorld.py 0.0
 
 \end{frame}
 
+\subsection{Modules}
+
+\begin{frame}{Reusing code: modules}
+
+Place code to be resued in {\texttt{Module.py:}}
+
+\input{Pygsnippets/Module}
+
+In {\texttt{somewhereElse.py}}, do somehting like:
+
+\input{Pygsnippets/somewhereElse}
+
+\end{frame}
+
+\subsection{Magic}
+
 \begin{frame}{Some Python magic}
 
 \include{Pygsnippets/magic}
@@ -82,7 +98,7 @@ $\lightning$ Common pitfalls:
 \begin{itemize}
     \item slicing: last index is \emph{exclusive}, not \emph{inclusive} as in e.g. Fortran
     \include{Pygsnippets/Pitfalls1}
-    \item What looks like an assignment is actually setting a reference:
+    \item What looks like performing an assignment is actually setting a reference:
     \include{Pygsnippets/Pitfalls2}
 \end{itemize}
 

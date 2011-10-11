@@ -1,4 +1,4 @@
-PYG = pygmentize -P style=autumn
+PYG = pygmentize -P style=default
 OBJECTS = controlStructures.tex\
 	Functions.tex\
 	HelloWorld.tex\
@@ -16,7 +16,9 @@ OBJECTS = controlStructures.tex\
 	Pitfalls1.tex\
 	Pitfalls2.tex\
 	logMap.tex\
-	magic.tex
+	magic.tex\
+	Module.tex\
+	somewhereElse.tex
 
 # pattern rules:
 %.tex: %.py
