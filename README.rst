@@ -5,18 +5,17 @@ Python Programming for Scientists
 About
 =====
 
-This is the source for a talk the author (Alexander Eberspächer) has given
+This are the sources for a talk the author (Alexander Eberspächer) has given
 at the informal student's seminar at the X. informal Billiard Workshop of
-the German Research Unit 760 at Riezlern, Kleinwalsertal.
-
-A slightly enhanced version will be given in our working group's seminar.
+the German Research Unit 760 at Riezlern, Kleinwalsertal. A slightly enhanced
+version has been presented to our working group, too.
 
 The presentation meant to be both a very short introduction to the Python
-programming as well as a short demonstration of advanced topics such as
-scientific packages (NumPy, SciPy). Python as a glue language was targeted,
-too. So the talk tried to kill two birds with one stone: it tried to
-introduce Python to people without prior exposure and it also tried to show
-some advanced topics to experienced Python users.
+programming as well as a short demonstration of advanced topics such as use
+of scientific packages (NumPy, SciPy). Python as a glue language was
+targeted, too. So the talk tried to kill two birds with one stone: it tried
+to introduce Python to people without prior exposure and it also tried to
+show some advanced topics to experienced Python users.
 
 Slides
 ======
@@ -52,17 +51,20 @@ Scientific Python
   (recommended!)
 
 - H.-P. Langtangens slides: http://heim.ifi.uio.no/~hpl/scripting/all-nosplit/
+  Also check Langtangens book "Python Scripting for Computational Science".
 
 OpenMP
 ------
 
-- OpenMP for Fortran: http://www.openmp.org/presentations/miguel/F95_OpenMPv1_v2.pdf
+- OpenMP for Fortran:
+  http://www.openmp.org/presentations/miguel/F95_OpenMPv1_v2.pdf
   (recommended)
 
 mpi4py
 ------
 
-- Documentation (also on using it with C/Fortran....): http://mpi4py.scipy.org/docs/mpi4py.pdf
+- Documentation (also on using it with C/Fortran....):
+  http://mpi4py.scipy.org/docs/mpi4py.pdf
 
 
 Some further links
