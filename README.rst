@@ -15,13 +15,14 @@ programming as well as a short demonstration of advanced topics such as use
 of scientific packages (NumPy, SciPy). Python as a glue language was
 targeted, too. So the talk tried to kill two birds with one stone: it tried
 to introduce Python to people without prior exposure and it also tried to
-show some advanced topics to experienced Python users.
+show some advanced topics to experienced Python users. Wrapping other languages
+was introduced with the aim of speeding Python computations up.
 
 Slides
 ======
 
 If you are only interested in the pdf slides, here's a direct link:
-https://github.com/aeberspaecher/PythonForScientists/blob/master/talk.pdf
+https://github.com/aeberspaecher/PythonForScientists/raw/master/talk.pdf
 
 Dependencies
 ============
