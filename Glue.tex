@@ -16,7 +16,7 @@ Python can wrap different different other programming languages\\[1ex]
 
 Why do that?
 \begin{columns}
-    
+
 \column{0.5\textwidth}
 \begin{itemize}
     \item Python can be \emph{slow}
@@ -33,6 +33,7 @@ Why do that?
 \end{columns}
 
 \end{frame}
+
 
 \subsection{A Problem}
 
@@ -55,6 +56,7 @@ second function: {\texttt{10 loops, best of 3: 92.9 ms per loop}}
 
 \end{frame}
 
+
 \subsection{Cython by example}
 
 \begin{frame}{How Cython works}
@@ -73,6 +75,7 @@ compiled, possibly typed Python:\\[1ex]
 
 \end{frame}
 
+
 \begin{frame}[fragile]{$\mathrm{sinc}(x)^{2}$ - Cython, Version 1}
 
 \include{Pygsnippets/Cython1}
@@ -80,6 +83,7 @@ compiled, possibly typed Python:\\[1ex]
 \pause
 $10^{6}$ array elements: {\texttt{1 loops, best of 3: 4.39 s per loop}}
 \end{frame}
+
 
 \begin{frame}[fragile]{$\mathrm{sinc}(x)^{2}$ - Cython, Version 2}
 
@@ -107,6 +111,7 @@ wrap Fortran code in Python:\\[1ex]
 
 \end{frame}
 
+
 \begin{frame}[fragile]{$\mathrm{sinc}(x)^{2}$ - f2py, Version 1}
 
 \include{Pygsnippets/F2PY1}
@@ -117,6 +122,7 @@ Again, a \alert{speedup by a factor of $\approx 100$}!
 
 \end{frame}
 
+
 \begin{frame}[fragile]{Cheating: $\mathrm{sinc}(x)^{2}$ - f2py, Version 2 - OpenMP}
 
 \include{Pygsnippets/F2PY2}
@@ -124,6 +130,7 @@ Again, a \alert{speedup by a factor of $\approx 100$}!
 \pause
 $10^{6}$ array elements, 2 Threads: {\texttt{10 loops, best of 3: 33.5 ms per loop}}
 \end{frame}
+
 
 \begin{frame}{$\mathrm{sinc}(x)^{2}$ - Overview}
 
@@ -134,6 +141,7 @@ Benchmark for an Intel i7:
 \end{center}
 
 \end{frame}
+
 
 \subsection{Techniques for faster Scripts}
 
@@ -154,6 +162,7 @@ check if your code is already fast enough. If not,
 \end{itemize}
 
 \end{frame}
+
 
 \subsection{MPI in Python}
 
@@ -179,9 +188,9 @@ Alternatives:
 
 \end{frame}
 
+
 \begin{frame}[fragile]{Slightly OffTopic: mpi4py}
 
 \include{Pygsnippets/mpi4py}
 
 \end{frame}
-
