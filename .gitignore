@@ -1,4 +1,2 @@
-*.aux
-*.out
-*.vrb
-*.log
+.waf*
+pdf/
