@@ -11,12 +11,12 @@ the German Research Unit 760 at Riezlern, Kleinwalsertal. A slightly enhanced
 version has been presented to our working group, too.
 
 The presentation meant to be both a very short introduction to the Python
-programming as well as a short demonstration of advanced topics such as use
-of scientific packages (NumPy, SciPy). Python as a glue language was
-targeted, too. So the talk tried to kill two birds with one stone: it tried
-to introduce Python to people without prior exposure and it also tried to
-show some advanced topics to experienced Python users. Wrapping other languages
-was introduced with the aim of speeding Python computations up.
+programming language as well as a short demonstration of advanced topics such
+as use of scientific packages (NumPy, SciPy). Python as a glue language was
+targeted, too. So the talk tried to kill two birds with one stone: it tried to
+introduce Python to people without prior exposure and it also tried to show
+some advanced topics to experienced Python users. Wrapping other languages was
+introduced with the aim of speeding Python computations up.
 
 Slides
 ======
@@ -41,6 +41,12 @@ Cython and f2py files contain some hints on the creation of shared objects.
 In comparison to slides I used in the Riezlern talk, there are some new
 slides. Additionally, minor bugs have been fixed. Let me know if you find
 more. The new slides are a bit more advertising Python as the old ones did.
+
+A note on style: the slides show some Python like ``return np.sinc(x[:])**2``
+with ``x`` being a NumPy array. Yes, of course the slice operator ``[:]`` part
+is unnecessary and slows everything up (a bit). However, I just like this
+synatx as it really makes clear that ``x`` is an array. I guess I aquired this
+habit doing a lot of Fortran over the past years.
 
 Some references
 ===============
