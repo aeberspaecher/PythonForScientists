@@ -22,12 +22,23 @@ Slides
 ======
 
 If you are only interested in the pdf slides, here's a direct link:
-https://github.com/aeberspaecher/PythonForScientists/raw/master/talk.pdf
+https://github.com/aeberspaecher/PythonForScientists/raw/master/pdf/talk.pdf
 
 Dependencies
 ============
 
 You'll need Pygments for the syntax highlighted LaTeX snippets to work.
+
+Building
+========
+
+Use ``waf`` to build the talk::
+
+  ./waf configure
+  ./waf build
+
+This will automatically check if you have all tools needed (``pdflatex``,
+``pygments``). The pdf file is created in the ``pdf`` build directory.
 
 Notes
 =====
