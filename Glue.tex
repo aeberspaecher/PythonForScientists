@@ -39,7 +39,7 @@ Why do that?
 
 \begin{frame}[fragile]{Problem: $\mathrm{sinc}(x)^{2}$}
 
-\include{Pygsnippets/sincSquare}
+\input{Pygsnippets/sincSquare.tex}
 
 \pause
 $10^{6}$ array elements: {\texttt{1 loops, best of 3: 4.91 s per loop}}
@@ -48,7 +48,7 @@ $10^{6}$ array elements: {\texttt{1 loops, best of 3: 4.91 s per loop}}
 
 \begin{frame}{First attempt: use NumPy array operations}
 
-\include{Pygsnippets/sincSquareNumPy}
+\input{Pygsnippets/sincSquareNumPy.tex}
 
 \pause
 $10^{6}$ array elements: first function: {\texttt{10 loops, best of 3: 73 ms per loop}},
@@ -78,7 +78,7 @@ compiled, possibly typed Python:\\[1ex]
 
 \begin{frame}[fragile]{$\mathrm{sinc}(x)^{2}$ - Cython, Version 1}
 
-\include{Pygsnippets/Cython1}
+\input{Pygsnippets/Cython1.tex}
 
 \pause
 $10^{6}$ array elements: {\texttt{1 loops, best of 3: 4.39 s per loop}}
@@ -87,7 +87,7 @@ $10^{6}$ array elements: {\texttt{1 loops, best of 3: 4.39 s per loop}}
 
 \begin{frame}[fragile]{$\mathrm{sinc}(x)^{2}$ - Cython, Version 2}
 
-\include{Pygsnippets/Cython2}
+\input{Pygsnippets/Cython2.tex}
 
 \pause
 $10^{6}$ array elements: {\texttt{10 loops, best of 3: 49.1 ms per loop}}\\[0.5ex]
@@ -114,7 +114,7 @@ wrap Fortran code in Python:\\[1ex]
 
 \begin{frame}[fragile]{$\mathrm{sinc}(x)^{2}$ - f2py, Version 1}
 
-\include{Pygsnippets/F2PY1}
+\input{Pygsnippets/F2PY1.tex}
 
 \pause
 $10^{6}$ array elements: {\texttt{10 loops, best of 3: 47.4 ms per loop}}\\
@@ -125,7 +125,7 @@ Again, a \alert{speedup by a factor of $\approx 100$}!
 
 \begin{frame}[fragile]{Cheating: $\mathrm{sinc}(x)^{2}$ - f2py, Version 2 - OpenMP}
 
-\include{Pygsnippets/F2PY2}
+\input{Pygsnippets/F2PY2.tex}
 
 \pause
 $10^{6}$ array elements, 2 Threads: {\texttt{10 loops, best of 3: 33.5 ms per loop}}
@@ -191,6 +191,6 @@ Alternatives:
 
 \begin{frame}[fragile]{Slightly OffTopic: mpi4py}
 
-\include{Pygsnippets/mpi4py}
+\input{Pygsnippets/mpi4py.tex}
 
 \end{frame}
