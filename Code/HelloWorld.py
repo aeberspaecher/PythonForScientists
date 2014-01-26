@@ -1,6 +1,7 @@
 import sys
 from math import sin, pi
 
+
 def sincSquare(x):
     """Return sinc(x)^2.
     """
@@ -9,6 +10,8 @@ def sincSquare(x):
     else:
         return 1.0
 
-x = sys.argv[1]
-y = sincSquare(float(x))
-print("sinc(%s)^2 = %s"%(x, y))
+
+if(__name__ == '__main__'):
+    x = sys.argv[1]
+    y = sincSquare(float(x))
+    print("sinc(%s)^2 = %s"%(x, y))
